@@ -1,0 +1,11 @@
+(function(Plugin) {
+	new Plugin("filebro-video-preview", function(context){
+		filebro.registerEventListener("openFile", {type: "video/mp4"}, function(file) {
+        console.log("filebro-video-preview:",file);
+        return {
+           template : "/views/mime-video.html",
+           file : file,
+        };
+		});
+	});
+})(filebro.Plugin)

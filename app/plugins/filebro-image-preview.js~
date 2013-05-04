@@ -1,0 +1,11 @@
+(function(Plugin) {
+	new Plugin("filebro-image-preview", function(context){
+		filebro.registerEventListener("openFile", {type: "image"}, function(data) {
+				return {
+				   template : "/views/mime-image.html",
+				   file : data.file,
+				   show:true
+				};
+		});
+	});
+})(filebro.Plugin)

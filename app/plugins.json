@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "filebro-image-preview",
+        "file" : "filebro-image-preview.js"
+    },
+    {
+        "name" : "filebro-video-preview",
+        "file" : "filebro-video-preview.js"
+    },
+    {
+        "name" : "filebro-text-preview",
+        "file" : "filebro-text-preview.js"
+    }
+]

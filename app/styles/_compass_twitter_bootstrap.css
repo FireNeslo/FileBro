@@ -1,0 +1,57 @@
+/*
+Syntax error: File to import not found or unreadable: compass.
+              Load path: /home/fireneslo/html5/FileBroWS/app/styles
+        on line 11 of _compass_twitter_bootstrap.scss
+
+6:  * http://www.apache.org/licenses/LICENSE-2.0
+7:  *
+8:  * Designed and built with all the love in the world @twitter by @mdo and @fat.
+9:  */
+10: 
+11: @import "compass";
+12: 
+13: @import "compass_twitter_bootstrap/mixins";
+14: 
+15: // CSS Reset
+16: @import "compass_twitter_bootstrap/reset";
+
+Backtrace:
+_compass_twitter_bootstrap.scss:11
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/import_node.rb:45:in `import'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:201:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/plugin.rb:81:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/exec.rb:424:in `watch_or_update'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/exec.rb:307:in `process_result'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/exec.rb:41:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/lib/sass/exec.rb:21:in `parse!'
+/var/lib/gems/1.9.1/gems/sass-3.2.4/bin/scss:8:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /home/fireneslo/html5/FileBroWS/app/styles\A         on line 11 of _compass_twitter_bootstrap.scss\A \A 6:  * http://www.apache.org/licenses/LICENSE-2.0\A 7:  *\A 8:  * Designed and built with all the love in the world @twitter by @mdo and @fat.\A 9:  */\A 10: \A 11: @import \"compass\";\A 12: \A 13: @import \"compass_twitter_bootstrap/mixins\";\A 14: \A 15: // CSS Reset\A 16: @import \"compass_twitter_bootstrap/reset\";"; }

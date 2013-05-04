@@ -1,0 +1,43 @@
+@import "bootstrap.min.css";
+@import "../components/angular-ui/build/angular-ui.min.css";
+.close-tab {
+  background: red;
+  line-height: 1.5em;
+  font-size: 1em;
+  color: white;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.close-tab:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.dir-item {
+  float: left;
+  width: 16%;
+  height: 11em;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  overflow: hidden;
+  border: 1px dashed gray;
+  -webkit-border-radius: 10px;
+}
+
+.dir-item-true {
+  background-color: blue;
+}
+.preview {
+  overflow: scroll;
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  right: 5%;
+}
+
+.img-max {
+  width: 100%;
+}

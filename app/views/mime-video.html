@@ -1,0 +1,5 @@
+<video controls width="100%">
+    <source src="fs{{file.path}}" type="{{file.type}}" />
+    <!-- If the browser doesn't understand the <video> element, then reference a Flash file. You could also write something like "Use a Better Browser!" if you're feeling nasty. (Better to use a Flash file though.) -->
+    <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org" version="VideoLAN.VLCPlugin.2"  width="70%" id="vlc" loop="yes" autoplay="yes" target="fs{{file.path}}"></embed>
+</video>

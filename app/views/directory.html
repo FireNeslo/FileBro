@@ -1,0 +1,9 @@
+<ul class="unstyled">
+    <li class="dir-item" ng-repeat="item in dir.list | orderBy:'isFile + name'">
+        <a ng-click="open(item)">
+            <img class="img-max" src="images/gnome-mime-{{item.icon}}.svg" alt="" onerror="this.src = 'images/application_view_tile.png'"/>
+            <div style="width:100%"><center>{{item.name}}</center></div>
+        </a>
+    </li>
+</ul>
+<file entry="preview"></file>
