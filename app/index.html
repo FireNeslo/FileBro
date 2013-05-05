@@ -29,7 +29,8 @@
     <!--[if lt IE 10]><p class=chromeframe>Your browser is <em>useless!</em> <a href="http://www.google.com/chromeframe/?redirect=true">Install Google Chrome Frame</a> to experience this site.</p><![endif]-->
     <div class="container" ng-controller="FileBroCtrl">
         <div class="browserbar">
-            <input class="input-block-level" id="address-bar" type="text" name="path" ng-model="currentDir().path"/>
+            <div class="span10"><input class="input-block-level" id="address-bar" type="text" name="path" ng-model="currentDir().path"/></div>
+            <div class="span1"><button ng-click="dirUp(currentDir())" class="btn pull-right"><i class="icon icon-arrow-up"></i></button></div>
         </div>
         <div class="row-fluid">
             <tabs class="span10">
