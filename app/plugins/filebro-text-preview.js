@@ -1,6 +1,6 @@
 (function(Plugin) {
 	new Plugin("filebro-text-preview", function(context){
-        console.log("init: filebro-text-preview");
+        console.log("plugin: filebro-text-preview");
         function textEditor (file) {
             return file.get().then(function(data) {
                 return {
