@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('FileBroWSApp')
-  .directive('file', function () {
+  .directive('file', function (settings) {
     return {
-      template: '<div class="well preview" ng-show="show"><center><h1>{{file.type}}: {{file.name}} <button class="pull-right" ng-click="show=false">Close</button></h1></center><ng-include src="template"></ng-include></div>',
+      templateUrl: '/views/'+settings.theme+'/file.html',
       restrict: 'E',
       scope: {
          entry: "="
@@ -15,7 +15,6 @@ angular.module('FileBroWSApp')
                     scope[data] = entry[data];
                 }
                 scope.show = true;
-                console.log("scope: ",scope);
             }
         });
       }

@@ -26,7 +26,7 @@ angular.module('FileBroWSApp')
                 });
                 var isUpdating = false;
                 scope.$watch("dir.path", function (d, old) {
-                    if(d[d.length-1] == "/" && old[old.length-1] != "/") {
+                    if(d[d.length-1] == "/") {
                         filesystem.cd(d).then(function (dir) {
                             scope.dir = dir;
                         });

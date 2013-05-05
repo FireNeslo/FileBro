@@ -1,6 +1,6 @@
 (function(Plugin) {
 	new Plugin("filebro-video-preview", function(context){
-        console.log("plugin: filebro-video-preview:");
+        console.log("plugin: filebro-video-preview");
         function html5Video (file) {
             return {
                 template : "/views/mime-video.html",
