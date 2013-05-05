@@ -18,6 +18,10 @@ angular.module('FileBroWSApp')
             }
 
         };
+        $scope.dirUp = function(dir) {
+            var newdir = dir.path.split("/");
+            dir.path = newdir.splice(0,newdir.length-2).join("/")+"/";
+        }
         $scope.add = function (tabs) {
             tabs.push({
                 path: "/home"

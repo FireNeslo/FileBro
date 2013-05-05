@@ -1,0 +1,3 @@
+filebro.settings = {
+    "theme" : "brostyle"
+}

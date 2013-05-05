@@ -1,16 +1,8 @@
 'use strict';
 
 angular.module('FileBroWSApp')
-  .factory('settings', function () {
+  .factory('settings', function ($http) {
     // Service logic
-    // ...
-
-    var meaningOfLife = 42;
-
     // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
+    return filebro.settings;
   });

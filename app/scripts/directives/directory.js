@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('FileBroWSApp')
-    .directive('directory', function ($q,$timeout,filesystem) {
+    .directive('directory', function ($q,$timeout,settings,filesystem) {
         return {
-            templateUrl: '/views/directory.html',
+            templateUrl: '/views/'+settings.theme+'/directory.html',
             restrict: 'E',
             scope: {
                 dir: '='
@@ -16,14 +16,13 @@ angular.module('FileBroWSApp')
                         event.preventDefault();
                         var dir =  scope.dir;
                         var search = dir.path.split("/");
-                        search = search[search.length-1];
+                        search = search[search.length-1].toLowerCase();
                         for(var i = 0; i < dir.list.length; i++) {
-                            if(dir.list[i].path.indexOf(search)>-1) {
+                            if(dir.list[i].name.substring(0, search.length).toLowerCase() === search) {
                                 scope.open(dir.list[i]);
                             }
                         }
                     }
-                    return
                 });
                 var isUpdating = false;
                 scope.$watch("dir.path", function (d, old) {
